@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="space.css" />
+    <title>Space Adventures!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Space Adventures!</h1>
+    </header>
+    <nav>
+      <ul class="main-nav">
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#moon">The Moon</a>
+        </li>
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#mars">Mars</a>
+        </li>
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#pluto">Pluto</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="row">
+        <div class="column column-with-text column-background-white">
+          <h2>Welcome to Space Adventures!</h2>
+          <p>
+            We are the solar system's favourite travel company, offering trips
+            to The Moon, Mars and Pluto.
+          </p>
+          <p>Are you bored with the same old holidays?</p>
+          <p>Why not book an exciting weekend away!</p>
+          <p>It doesn't need to cost the earth to go to space*.</p>
+          <p><em>(*it does)</em></p>
+        </div>
+
+        <div
+          class="column column-with-text column-background-transparent column-size-double"
+        >
+          <h2>Book your trip</h2>
+          <form method="POST" action="">
+            <div class="input">
+              <p class="input-title">Your name</p>
+              <input type="text" name="name" placeholder="Your name..." />
+            </div>
+            <div class="input">
+              <p class="input-title">Your address</p>
+              <textarea
+                name="address"
+                placeholder="Your address"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </div>
+            <div class="input">
+              <p class="input-title">Your Destination</p>
+              <label>
+                <input type="radio" name="destination" value="The Moon" />
+                The Moon
+              </label>
+              <label>
+                <input type="radio" name="destination" value="Mars" />
+                Mars
+              </label>
+              <label>
+                <input type="radio" name="destination" value="Pluto" />
+                Pluto
+              </label>
+            </div>
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column column-with-text column-with-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Destination</th>
+                <th>Distance <br />(one way)</th>
+                <th>Travel time <br />(round trip)</th>
+                <th>Cost <br />(per passenger)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The Moon</td>
+                <td>300,000km</td>
+                <td>2 weeks</td>
+                <td>£40,000,000</td>
+              </tr>
+              <tr>
+                <td>Mars</td>
+                <td>227,000,000km</td>
+                <td>3 years</td>
+                <td>£400,000,000</td>
+              </tr>
+              <tr>
+                <td>Pluto</td>
+                <td>4,500,000,000km</td>
+                <td>25 years</td>
+                <td>£4,000,000,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row" id="moon">
+        <div class="column column-with-media">
+          <img src="images/moon.jpg" alt="An image of the moon" />
+        </div>
+        <div class="column column-with-text column-background-white">
+          <h2>The Moon</h2>
+          <p>
+            Why not travel in style to The Moon, our closest celestial
+            companion.
+          </p>
+          <p>
+            One of our most affordable trips, and the only one that guarantees*
+            that when you get home again most of your friends won't have
+            forgotten you.
+          </p>
+          <p><em>(*not guaranteed)</em></p>
+        </div>
+      </div>
+
+      <div class="row" id="mars">
+        <div class="column column-with-text column-background-white">
+          <h2>Mars</h2>
+          <p>
+            You could travel all the way to Mars, 18 months each way, just to
+            spend a weekend climbing the largest mountain in the solar system,
+            Olympus Mons.
+          </p>
+          <p>
+            Enjoy massive dust storms, gravity a third that on Earth, and an
+            oxygen-free atmosphere.
+          </p>
+          <p>Don't forget your space suit!</p>
+        </div>
+        <div class="column column-with-media">
+          <img src="images/mars.jpg" alt="An image of mars" />
+        </div>
+      </div>
+
+      <div class="row" id="pluto">
+        <div class="column column-with-media">
+          <img src="images/pluto.jpg" alt="An image of pluto" />
+        </div>
+        <div class="column column-with-text column-background-white">
+          <h2>Pluto</h2>
+          <p>Why not spend a long weekend on our furthest destination?</p>
+          <p>
+            Our fully stocked library ensures that you would have plenty to do
+            during the 25 year round trip.
+          </p>
+          <p>Fun for all the family!</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Space Adventures, all rights reserved</p>
+      <ul class="footer-nav">
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#">Cookies</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
